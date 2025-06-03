@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - includeAll:
+      path: 01-create-tables
+      relativeToChangelogFile: true

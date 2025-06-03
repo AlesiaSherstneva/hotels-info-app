@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: "4"
+      author: AlesiaSherstneva
+      changes:
+        - createTable:
+            tableName: address
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: house_number
+                  type: VARCHAR(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: street_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    references: street(id)
+                    foreignKeyName: fk_address_street
+              - column:
+                  name: post_code
+                  type: VARCHAR(6)
+                  constraints:
+                    nullable: false

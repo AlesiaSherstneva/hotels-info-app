@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /property-view
+  port: 8092
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:hotel-info-db
+    driver-class-name: org.h2.Driver
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
