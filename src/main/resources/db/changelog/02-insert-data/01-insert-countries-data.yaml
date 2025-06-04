@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: "8"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: country
+            columns:
+              - column:
+                  name: name
+                  value: Belarus
+        - insert:
+            tableName: country
+            columns:
+              - column:
+                  name: name
+                  value: Russia

@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: "12"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: DoubleTree by Hilton Minsk
+              - column:
+                  name: description
+                  value: "The DoubleTree by Hilton Hotel Minsk offers 193 luxurious rooms 
+                  in the Belorussian capital and stunning views of Minsk city from the hotel's 
+                  20th floor SkyBar."
+              - column:
+                  name: brand
+                  value: Hilton
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 9 AND STREET.name = 'Pobediteley Avenue'
+                  AND CITY.name = 'Minsk'"
+              - column:
+                  name: phone
+                  value: "+375 17 309-80-00"
+              - column:
+                  name: email
+                  value: doubletreeminsk.info@hilton.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"

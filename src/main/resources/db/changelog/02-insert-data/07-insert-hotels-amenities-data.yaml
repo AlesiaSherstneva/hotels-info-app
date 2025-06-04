@@ -1,0 +1,96 @@
+databaseChangeLog:
+  - changeSet:
+      id: "14"
+      author: AlesiaSherstneva
+      changes:
+        # DoubleTree by Hilton Minsk hotel amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free parking'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Concierge'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Pet-friendly rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Room service'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'DoubleTree by Hilton Minsk'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"

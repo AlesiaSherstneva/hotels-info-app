@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: "11"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "9"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Pobediteley Avenue')"
+              - column:
+                  name: post_code
+                  value: "220004"

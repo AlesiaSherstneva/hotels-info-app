@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: "13"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Free parking
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Free WiFi
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Non-smoking rooms
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Concierge
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: On-site restaurant
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Fitness center
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Pet-friendly rooms
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Room service
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Business center
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Meeting rooms

@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: "10"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Pobediteley Avenue
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'Minsk')"

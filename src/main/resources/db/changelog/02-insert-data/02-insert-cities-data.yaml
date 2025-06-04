@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: "9"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: Minsk
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'Belarus')"
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: Brest
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'Belarus')"
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: Mogilev
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'Belarus')"
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: Moskow
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'Russia')"
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: St.Petersburg
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'Russia')"
