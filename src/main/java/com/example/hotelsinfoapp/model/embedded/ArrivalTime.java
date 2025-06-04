@@ -1,4 +1,4 @@
-package com.example.hotelsinfoapp.model;
+package com.example.hotelsinfoapp.model.embedded;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
