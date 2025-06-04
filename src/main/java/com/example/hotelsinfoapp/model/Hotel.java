@@ -1,9 +1,6 @@
 package com.example.hotelsinfoapp.model;
 
-import com.example.hotelsinfoapp.model.embedded.ArrivalTime;
-import com.example.hotelsinfoapp.model.embedded.Contacts;
 import jakarta.persistence.Column;
-import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +14,7 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalTime;
 import java.util.Set;
 
 @Entity
@@ -42,11 +40,17 @@ public class Hotel {
     @JoinColumn(name = "address_id")
     private Address address;
 
-    @Embedded
-    private Contacts contacts;
+    @Column(name = "phone")
+    private String phone;
 
-    @Embedded
-    private ArrivalTime arrivalTime;
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "check_in")
+    private LocalTime checkIn;
+
+    @Column(name = "check_out")
+    private LocalTime checkOut;
 
     @ManyToMany
     @JoinTable(

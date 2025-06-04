@@ -1,7 +1,9 @@
 package com.example.hotelsinfoapp.service;
 
+import com.example.hotelsinfoapp.dto.HotelFullDto;
 import com.example.hotelsinfoapp.dto.HotelShortDto;
 import com.example.hotelsinfoapp.dto.mapper.HotelMapper;
+import com.example.hotelsinfoapp.model.Hotel;
 import com.example.hotelsinfoapp.repository.HotelRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -21,5 +23,12 @@ public class HotelService {
                 .stream()
                 .map(hotelMapper::hotelToShortDto)
                 .toList();
+    }
+
+    public HotelFullDto getHotelById(Long id) {
+        Hotel hotel = hotelRepository.findById(id)
+                .orElseThrow();
+
+        return hotelMapper.hotelToFullDto(hotel);
     }
 }
