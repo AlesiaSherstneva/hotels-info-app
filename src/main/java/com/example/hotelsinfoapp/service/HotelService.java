@@ -11,6 +11,7 @@ import com.example.hotelsinfoapp.model.City;
 import com.example.hotelsinfoapp.model.Country;
 import com.example.hotelsinfoapp.model.Hotel;
 import com.example.hotelsinfoapp.model.Street;
+import com.example.hotelsinfoapp.repository.AmenityRepository;
 import com.example.hotelsinfoapp.repository.HotelRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.persistence.criteria.Join;
@@ -28,6 +29,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class HotelService {
     private final HotelRepository hotelRepository;
+    private final AmenityRepository amenityRepository;
     private final HotelMapper hotelMapper;
 
     @Transactional(readOnly = true)
@@ -80,7 +82,7 @@ public class HotelService {
                         filter.getCountry().toLowerCase()));
             }
 
-            // предполагаю, что поиск по amenities производится через выбор из чек-листа
+            // предполагаю, что поиск по amenities производится через выбор чек-боксов
             if (filter.getAmenities() != null && !filter.getAmenities().isEmpty()) {
                 Join<Hotel, Amenity> amenitiesJoin = root.join("amenities", JoinType.INNER);
                 predicates.add(amenitiesJoin.get("name").in(filter.getAmenities()));
@@ -105,5 +107,21 @@ public class HotelService {
         hotelRepository.save(newHotel);
 
         return hotelMapper.hotelToShortDto(newHotel);
+    }
+
+    public void addAmenities(Long id, List<String> amenities) {
+        Hotel hotel = hotelRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Hotel with id " + id + " not found"));
+
+        // предполагаю, что amenities для добавления выбираются с помощью чек-боксов
+        amenities.removeAll(hotel.getAmenities()
+                .stream()
+                .map(Amenity::getName)
+                .toList());
+
+        List<Amenity> newAmenities = amenityRepository.findByNameIn(amenities);
+
+        hotel.getAmenities().addAll(newAmenities);
+        hotelRepository.save(hotel);
     }
 }

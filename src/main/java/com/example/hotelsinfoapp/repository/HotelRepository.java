@@ -9,5 +9,8 @@ import java.util.List;
 
 public interface HotelRepository extends JpaRepository<Hotel, Long> {
     @EntityGraph(attributePaths = {"address.street.city.country"})
+    List<Hotel> findAll();
+
+    @EntityGraph(attributePaths = {"address.street.city.country"})
     List<Hotel> findAll(Specification<Hotel> spec);
 }
