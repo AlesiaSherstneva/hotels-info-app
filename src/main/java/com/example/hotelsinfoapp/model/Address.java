@@ -1,5 +1,6 @@
 package com.example.hotelsinfoapp.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,7 +24,7 @@ public class Address {
     @Column(name = "house_number")
     private String houseNumber;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "street_id")
     private Street street;
 
