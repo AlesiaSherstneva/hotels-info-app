@@ -15,3 +15,75 @@ databaseChangeLog:
               - column:
                   name: post_code
                   value: "220004"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "8"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Tolstogo Street')"
+              - column:
+                  name: post_code
+                  value: "220007"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "41"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Warshavskoye Shosse')"
+              - column:
+                  name: post_code
+                  value: "224003"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "20"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Pobediteley Avenue')"
+              - column:
+                  name: post_code
+                  value: "220020"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "12"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Krasnoprudnaya Street')"
+              - column:
+                  name: post_code
+                  value: "107140"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "1"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Samarskaya Street')"
+              - column:
+                  name: post_code
+                  value: "129110"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "62 Building 1"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Peterburgskoye Shosse')"
+              - column:
+                  name: post_code
+                  value: "196626"

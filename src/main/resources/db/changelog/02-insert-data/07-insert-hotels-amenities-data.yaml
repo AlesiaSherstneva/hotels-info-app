@@ -94,3 +94,549 @@ databaseChangeLog:
               - column:
                   name: amenity_id
                   valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        # Hampton by Hilton Minsk City Center amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free parking'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Minsk City Center'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free hot breakfast'"
+        # Hampton by Hilton Brest amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hampton by Hilton Brest'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free hot breakfast'"
+        # Minsk Marriott Hotel amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free parking'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Concierge'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Room service'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Indoor swimming pool'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Sauna'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Minsk Marriott Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Spa'"
+        # Moscow Marriott Imperial Plaza amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Concierge'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Pet-friendly rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Room service'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Moscow Marriott Imperial Plaza'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        # Radisson Blu Olympiyskiy Hotel amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Concierge'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Pet-friendly rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Room service'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Radisson Blu Olympiyskiy Hotel'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Spa'"
+        # Hilton Saint Petersburg ExpoForum amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free parking'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free WiFi'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Non-smoking rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Concierge'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'On-site restaurant'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Fitness center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Pet-friendly rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Room service'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Business center'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Meeting rooms'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Indoor swimming pool'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Sauna'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Spa'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hilton Saint Petersburg ExpoForum'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Free airport transportation'"

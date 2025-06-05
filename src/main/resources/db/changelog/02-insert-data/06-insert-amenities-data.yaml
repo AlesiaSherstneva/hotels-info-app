@@ -63,3 +63,33 @@ databaseChangeLog:
               - column:
                   name: name
                   value: Meeting rooms
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Free hot breakfast
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Indoor swimming pool
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Sauna
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Spa
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Free airport transportation

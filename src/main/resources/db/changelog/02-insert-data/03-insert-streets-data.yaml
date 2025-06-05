@@ -12,3 +12,48 @@ databaseChangeLog:
               - column:
                   name: city_id
                   valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'Minsk')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Tolstogo Street
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'Minsk')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Warshavskoye Shosse
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'Brest')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Krasnoprudnaya Street
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'Moscow')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Samarskaya Street
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'Moscow')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Peterburgskoye Shosse
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'St.Petersburg')"

@@ -3,6 +3,7 @@ databaseChangeLog:
       id: "12"
       author: AlesiaSherstneva
       changes:
+        # DoubleTree by Hilton Minsk hotel
         - insert:
             tableName: hotel
             columns:
@@ -30,6 +31,204 @@ databaseChangeLog:
               - column:
                   name: email
                   value: doubletreeminsk.info@hilton.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Hampton by Hilton Minsk City Center
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Hampton by Hilton Minsk City Center
+              - column:
+                  name: description
+                  value: "Enjoy free hot breakfast and internet access when staying at the Hampton 
+                  by Hilton Minsk, located in the heart of Minsk, next to the main train station."
+              - column:
+                  name: brand
+                  value: Hilton
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 8 AND STREET.name = 'Tolstogo Street'
+                  AND CITY.name = 'Minsk'"
+              - column:
+                  name: phone
+                  value: "+375 17 215-40-00"
+              - column:
+                  name: email
+                  value: MSQHX.hampton@hilton.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Hampton by Hilton Brest
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Hampton by Hilton Brest
+              - column:
+                  name: description
+                  value: "The Hampton by Hilton Brest hotel is a modern, 12-story hotel conveniently 
+                  located in Brest, Belarus, near major roads and attractions."
+              - column:
+                  name: brand
+                  value: Hilton
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 41 AND STREET.name = 'Warshavskoye Shosse'
+                  AND CITY.name = 'Brest'"
+              - column:
+                  name: phone
+                  value: "+375 16 227-82-00"
+              - column:
+                  name: email
+                  value: LUZBB_Hampton@hilton.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Minsk Marriott Hotel
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Minsk Marriott Hotel
+              - column:
+                  name: description
+                  value: "The Minsk Marriott Hotel is a modern, upscale hotel located in Minsk, 
+                  Belarus, offering a variety of amenities for both business and leisure travelers."
+              - column:
+                  name: brand
+                  value: Marriott
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 20 AND STREET.name = 'Pobediteley Avenue'
+                  AND CITY.name = 'Minsk'"
+              - column:
+                  name: phone
+                  value: "+375 17 279-30-00"
+              - column:
+                  name: email
+                  value: info@marriott-minsk.ru
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Moscow Marriott Imperial Plaza
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Moscow Marriott Imperial Plaza
+              - column:
+                  name: description
+                  value: "Moscow Marriott Imperial Plaza is a new and impeccable location for business 
+                  trips, family vacations or exciting adventures."
+              - column:
+                  name: brand
+                  value: Marriott
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 12 AND STREET.name = 'Krasnoprudnaya Street'
+                  AND CITY.name = 'Moscow'"
+              - column:
+                  name: phone
+                  value: "+7 495 786-99-99"
+              - column:
+                  name: email
+                  value: info@marriott-minsk.ru
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Radisson Blu Olympiyskiy Hotel
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Radisson Blu Olympiyskiy Hotel
+              - column:
+                  name: description
+                  value: "The Radisson Blu Olympiyskiy Hotel, Moscow features 379 sleekly designed 
+                  rooms and suites, each offering outstanding panoramic views of Moscow's skyline."
+              - column:
+                  name: brand
+                  value: Radisson
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 1 AND STREET.name = 'Samarskaya Street'
+                  AND CITY.name = 'Moscow'"
+              - column:
+                  name: phone
+                  value: "+7 495 221-77-77"
+              - column:
+                  name: email
+                  value: info.olympiyskiy.moscow@radissonblu.com
+              - column:
+                  name: check_in
+                  value: "15:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Hilton Saint Petersburg ExpoForum
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Hilton Saint Petersburg ExpoForum
+              - column:
+                  name: description
+                  value: "The Hilton Saint Petersburg ExpoForum is a modern hotel located on the grounds 
+                  of the ExpoForum, one of the world's largest exposition centers."
+              - column:
+                  name: brand
+                  value: Hilton
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = '62 Building 1' AND STREET.name = 'Peterburgskoye Shosse'
+                  AND CITY.name = 'St.Petersburg'"
+              - column:
+                  name: phone
+                  value: "+7 812 647-74-84"
+              - column:
+                  name: email
+                  value: LEDHI.GM@hilton.com
               - column:
                   name: check_in
                   value: "14:00"

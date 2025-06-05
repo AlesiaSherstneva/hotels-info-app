@@ -14,7 +14,7 @@ databaseChangeLog:
                     primaryKey: true
               - column:
                   name: house_number
-                  type: VARCHAR(10)
+                  type: VARCHAR(20)
                   constraints:
                     nullable: false
               - column:

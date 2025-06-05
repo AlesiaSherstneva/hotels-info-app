@@ -35,7 +35,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: name
-                  value: Moskow
+                  value: Moscow
               - column:
                   name: country_id
                   valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'Russia')"
