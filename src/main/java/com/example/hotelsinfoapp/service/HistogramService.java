@@ -7,6 +7,7 @@ import com.example.hotelsinfoapp.repository.CountryRepository;
 import com.example.hotelsinfoapp.repository.HotelRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
@@ -20,6 +21,7 @@ public class HistogramService {
     private final CountryRepository countryRepository;
     private final AmenityRepository amenityRepository;
 
+    @Transactional(readOnly = true)
     public Map<String, Integer> getHistogram(String param) {
         List<HistogramDto> histogram = switch (param) {
             case "brand" -> hotelRepository.groupHotelsByBrand();

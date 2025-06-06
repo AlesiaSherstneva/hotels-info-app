@@ -42,6 +42,7 @@ public abstract class AddressMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "street", ignore = true)
+    @Mapping(target = "hotel", ignore = true)
     public abstract Address createAddress(AddressDto addressDto);
 
     @AfterMapping
