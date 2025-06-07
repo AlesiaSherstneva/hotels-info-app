@@ -1,0 +1,97 @@
+databaseChangeLog:
+  - changeSet:
+      id: "test-5"
+      author: AlesiaSherstneva
+      changes:
+        # Test Hotel 1 Brand 1
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Hotel 1 Brand 1
+              - column:
+                  name: description
+                  value: "Test Hotel 1 Brand 1 description"
+              - column:
+                  name: brand
+                  value: Brand 1
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 123 AND STREET.name = 'Test Street 1'
+                  AND CITY.name = 'TestCity1'"
+              - column:
+                  name: phone
+                  value: "+111 11 111-11-11"
+              - column:
+                  name: email
+                  value: hotel1.brand1@test.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Test Hotel 2 Brand 1
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Hotel 2 Brand 1
+              - column:
+                  name: description
+                  value: "Test Hotel 2 Brand 1 description"
+              - column:
+                  name: brand
+                  value: Brand 1
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 456 AND STREET.name = 'Test Street 2'
+                  AND CITY.name = 'TestCity2'"
+              - column:
+                  name: phone
+                  value: "+222 22 222-22-22"
+              - column:
+                  name: email
+                  value: hotel2.brand1@test.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              - column:
+                  name: check_out
+                  value: "12:00"
+        # Test Hotel 1 Brand 2
+        - insert:
+            tableName: hotel
+            columns:
+              - column:
+                  name: name
+                  value: Hotel 1 Brand 2
+              # no description
+              - column:
+                  name: brand
+                  value: Brand 2
+              - column:
+                  name: address_id
+                  valueComputed: "SELECT ADDRESS.id FROM \"ADDRESS\" 
+                  JOIN \"STREET\" ON ADDRESS.street_id = STREET.id
+                  JOIN \"CITY\" ON STREET.city_id = CITY.id
+                  WHERE ADDRESS.house_number = 789 AND STREET.name = 'Test Street 3'
+                  AND CITY.name = 'TestCity1'"
+              - column:
+                  name: phone
+                  value: "+3 333 333-33-33"
+              - column:
+                  name: email
+                  value: hotel2.brand1@test.com
+              - column:
+                  name: check_in
+                  value: "14:00"
+              # no check-out time

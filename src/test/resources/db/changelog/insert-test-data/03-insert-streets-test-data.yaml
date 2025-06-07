@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: "test-3"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Test Street 1
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'TestCity1')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Test Street 2
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'TestCity2')"
+        - insert:
+            tableName: street
+            columns:
+              - column:
+                  name: name
+                  value: Test Street 3
+              - column:
+                  name: city_id
+                  valueComputed: "(SELECT id FROM \"CITY\" WHERE name = 'TestCity1')"
