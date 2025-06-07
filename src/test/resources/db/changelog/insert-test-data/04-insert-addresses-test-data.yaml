@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: "test-4"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "123"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Test Street 1')"
+              - column:
+                  name: post_code
+                  value: "123321"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "456"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Test Street 2')"
+              - column:
+                  name: post_code
+                  value: "456654"
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: house_number
+                  value: "789"
+              - column:
+                  name: street_id
+                  valueComputed: "(SELECT id FROM \"STREET\" WHERE name = 'Test Street 3')"
+              - column:
+                  name: post_code
+                  value: "789987"

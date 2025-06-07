@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: "test-1"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: country
+            columns:
+              - column:
+                  name: name
+                  value: TestCountry1
+        - insert:
+            tableName: country
+            columns:
+              - column:
+                  name: name
+                  value: TestCountry2

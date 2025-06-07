@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: "test-6"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Test amenity 1
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Test amenity 2
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Test amenity 3
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Test amenity 4
+        - insert:
+            tableName: amenity
+            columns:
+              - column:
+                  name: name
+                  value: Test amenity 5

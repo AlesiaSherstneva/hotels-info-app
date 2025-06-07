@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: "test-2"
+      author: AlesiaSherstneva
+      changes:
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: TestCity1
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'TestCountry1')"
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: TestCity2
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'TestCountry1')"
+        - insert:
+            tableName: city
+            columns:
+              - column:
+                  name: name
+                  value: TestCity3
+              - column:
+                  name: country_id
+                  valueComputed: "(SELECT id FROM \"COUNTRY\" WHERE name = 'TestCountry2')"

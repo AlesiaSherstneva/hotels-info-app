@@ -1,0 +1,70 @@
+databaseChangeLog:
+  - changeSet:
+      id: "14"
+      author: AlesiaSherstneva
+      changes:
+        # Test Hotel 1 Brand 1 amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 1 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 1'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 1 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 2'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 1 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 5'"
+        # Test Hotel 2 Brand 1 amenities
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 2 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 1'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 2 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 2'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 2 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 3'"
+        - insert:
+            tableName: hotel_amenity
+            columns:
+              - column:
+                  name: hotel_id
+                  valueComputed: "SELECT id FROM \"HOTEL\" WHERE name = 'Hotel 2 Brand 1'"
+              - column:
+                  name: amenity_id
+                  valueComputed: "SELECT id FROM \"AMENITY\" WHERE name = 'Test amenity 4'"
