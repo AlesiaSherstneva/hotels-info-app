@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/search")
@@ -23,7 +24,7 @@ public class SearchController {
                                                             @RequestParam(required = false) String brand,
                                                             @RequestParam(required = false) String city,
                                                             @RequestParam(required = false) String country,
-                                                            @RequestParam(required = false) List<String> amenities) {
+                                                            @RequestParam(required = false) Set<String> amenities) {
         // pagination я не делала, так как её не было в ТЗ
         HotelSearchFilter filter = HotelSearchFilter.builder()
                 .name(name)

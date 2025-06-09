@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/hotels")
@@ -41,7 +42,7 @@ public class HotelController {
 
     @PostMapping("/{id}/amenities")
     public ResponseEntity<Void> addAmenities(@PathVariable Long id,
-                                             @RequestBody List<String> amenities) {
+                                             @RequestBody Set<String> amenities) {
         hotelService.addAmenities(id, amenities);
         return ResponseEntity.ok().build();
     }

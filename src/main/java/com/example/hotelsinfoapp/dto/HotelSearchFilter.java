@@ -3,7 +3,7 @@ package com.example.hotelsinfoapp.dto;
 import lombok.Builder;
 import lombok.Getter;
 
-import java.util.List;
+import java.util.Set;
 
 @Getter
 @Builder
@@ -12,5 +12,5 @@ public class HotelSearchFilter {
     private String brand;
     private String city;
     private String country;
-    private List<String> amenities;
+    private Set<String> amenities;
 }

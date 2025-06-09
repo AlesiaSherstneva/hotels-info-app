@@ -6,9 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Set;
 
 public interface AmenityRepository extends JpaRepository<Amenity, Integer> {
-    List<Amenity> findByNameIn(List<String> names);
+    Set<Amenity> findByNameIn(Set<String> names);
 
     @Query("SELECT a.name AS key, COUNT(h) AS value FROM Amenity a " +
             "LEFT JOIN a.hotels h GROUP BY a.name")
